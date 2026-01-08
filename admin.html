@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Menu Admin Preview</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <main class="container">
+    <div class="header">
+      <div>
+        <div class="brand">Narma • Menu Admin</div>
+        <div class="sub">Preview menu images before publishing</div>
+      </div>
+      <div class="links">
+        <a href="./breakfast.html" target="_blank">Breakfast</a>
+        <a href="./lunch.html" target="_blank">Lunch</a>
+        <a href="./dinner.html" target="_blank">Dinner</a>
+      </div>
+    </div>
+
+    <section class="card">
+      <div class="hero">
+        <h1>How to publish</h1>
+        <p>
+          Graphics exports 3 files and you replace them in <span class="mono">/images</span>:
+          <span class="mono">breakfast.webp</span>, <span class="mono">lunch.webp</span>, <span class="mono">dinner.webp</span>.
+        </p>
+        <p class="small">
+          Recommended export: <b>1440px wide</b> (or 2160px for ultra crisp), WebP quality 75–85, keep files ≤ 2MB.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div>
+          <label>Breakfast image (preview)</label>
+          <div class="small">Target file: <span class="mono">images/breakfast.webp</span></div>
+          <input type="file" id="fBreakfast" accept="image/*"/>
+          <div class="preview" style="margin-top:10px;">
+            <img id="pBreakfast" src="./images/breakfast.webp" alt="Breakfast preview">
+          </div>
+        </div>
+
+        <div>
+          <label>Lunch image (preview)</label>
+          <div class="small">Target file: <span class="mono">images/lunch.webp</span></div>
+          <input type="file" id="fLunch" accept="image/*"/>
+          <div class="preview" style="margin-top:10px;">
+            <img id="pLunch" src="./images/lunch.webp" alt="Lunch preview">
+          </div>
+        </div>
+
+        <div>
+          <label>Dinner image (preview)</label>
+          <div class="small">Target file: <span class="mono">images/dinner.webp</span></div>
+          <input type="file" id="fDinner" accept="image/*"/>
+          <div class="preview" style="margin-top:10px;">
+            <img id="pDinner" src="./images/dinner.webp" alt="Dinner preview">
+          </div>
+        </div>
+
+        <div class="small">
+          Tip: open this page on your phone too (same link) to verify readability.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./admin.js"></script>
+</body>
+</html>
